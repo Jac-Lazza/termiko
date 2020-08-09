@@ -1,0 +1,28 @@
+*Playing the game*
+Each player has a corresponding colored army. There are six avaiable armies out there to choose from.
+At each player is given a *fixed amount of countries* and an *initial amount of troups* to start off.
+The first turns are used to deploy troups, you cannot attack (it would be an advantage to the first player).
+Then each player gets an *amount of troups* at the start of each turn, he can choose how many and where to deploy them
+and then he can start making attacks or strategic movements.
+
+*strategic movement*
+A strategic movement is performed when you move troups from a country to an *allied one* or
+to a country with *no owner* (white countries). When a strategic movement is performed,
+it's the end of your turn
+
+*attack*
+An attack is performed when you want to conquer a country owned by *another player*.
+The *attacker* can choose at max 3 tanks for the attack, and the defender can do the same.
+If the attacker conquers the new country he must move at least the number of tanks used
+in the attack.
+One caviat though, an *owned country* must always have at least one tank to be considered owned.
+So, during attacks, if you're low on deployable troups, you can run on limitations.
+For example a country with two tanks can attack with only one, and a country with only
+one tank can do nothing.
+An attack *does not* end your turn, so you can spam attacks if you have the forces to.
+
+*bonuses*
+The amount of troups at the start of each turn is calculated by *dividing by three*
+*the number of countries the players owns* in that moment. If a player *owns a continent*
+he will get additional troups based on how big and important the contintent is. This last
+bonus is called *continental bonus* and it can be disabled in the options.

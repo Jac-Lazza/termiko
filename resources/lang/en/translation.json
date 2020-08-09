@@ -1,0 +1,53 @@
+{
+  "Options": {
+    "Avaiable troups": "Avaiable troups",
+    "Turn limit": "Turn limit",
+    "Gamemode": "Gamemode",
+    "Language": "Language",
+    "Continental bonus": "Continental bonus",
+    "Save and return to main menu": "Save and return to main menu"
+  },
+  "Main menu": {
+    "Local match": "Local match",
+    "Network match": "Network match",
+    "Game rules": "Game rules",
+    "Options": "Options",
+    "Exit": "Exit"
+  },
+  "Gamemode": {
+    "0": "World domination",
+    "1": "Enemy annihilation"
+  },
+  "Continental bonus": {
+    "0": "OFF",
+    "1": "ON"
+  },
+  "Armies": {
+    "red": "Red army",
+    "blue": "Blue army",
+    "yellow": "Yellow army",
+    "green": "Green army",
+    "cyan": "Cyan army",
+    "magenta": "Magenta army"
+  },
+  "Win messages": {
+    "Win world domination": "THE DOMINATION OF THE WORLD HAS BEEN REACHED BY",
+    "Win enemy annihilation": "ALL ENEMIES HAVE BEEN DEFEATED BY",
+    "Win turn limit": "TURN LIMIT REACHED! THE WINNER IS",
+    "Win draw": "DRAW, THE WINNERS ARE"
+  },
+  "Confirm": "Confirm",
+  "Armies selection": "ARMIES SELECTION",
+  "Map selection": "MAP SELECTION",
+  "Game options": "GAME OPTIONS",
+  "Player": "PLAYER",
+  "Avaiable troups": "AVAIABLE TROUPS",
+  "Deployed troups": "DEPLOYED TROUPS",
+  "Allied troups": "ALLIED TROUPS",
+  "Enemy troups": "ENEMY TROUPS",
+  "Troups movement": "TROUPS MOVEMENT",
+  "Troups to move": "TROUPS TO MOVE",
+  "Attack preparation": "ATTACK PREPARATION",
+  "Defence preparation": "DEFENCE PREPARATION",
+  "Press continue": "~~~ Press ENTER to return to main menu ~~~"
+}

@@ -1,0 +1,19 @@
+*Modalità di gioco e opzioni*
+L'obbiettivo del gioco dipende dalla *modalità di gioco* selezionata (controlla le opzioni).
+Modalità disponibili:
+ *~ Dominazione del mondo*
+ Conquista il mondo intero, non risparmiare nessuna nazione
+ *~ Annientamento del nemico*
+ Sconfiggi tutti i nemici, in questa modalità non è necessario conquistare ogni nazione
+ (perfetta per pochi giocatori)
+
+*opzioni di gioco*
+Nelle *opzioni* puoi cambiare numerosi parametri e preferenze premendo *invio* su quello
+che ti interessa cambiare, come la *lingua*, le truppe iniziali o la modalità di gioco.
+Le tue scelte verranno salvate.
+
+*Limite di turni*
+Sempre nelle *opzioni* puoi abilitare, cambiare o disabilitare il *numero massimo di turni di gioco*.
+Se quel numero è raggiunto la partita finisce e vince il giocatore/i che hanno fatto il punteggio maggiore.
+Il punteggio è calcolato in base all'importanza delle nazioni conquistate, non viene contato il numero di truppe possedute.
+In questo gioco, con *turno* si indica l'azione di un giocatore, non l'intero giro di tutti i giocatori.

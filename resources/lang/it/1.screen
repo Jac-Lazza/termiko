@@ -1,0 +1,13 @@
+*Risoluzione dello schermo*
+La grafica di questo gioco è fatta interamente di caratteri colorati.
+La mappa del gioco consuma parecchio spazio in termini di colonne e righe del terminale
+quindi, per avere un'esperienza piacevole, ingrandisci al massimo la finestra del terminale
+e diminuisci la dimensione del carattere premendo *CTRL+-* (una paio di volte dovrebbe bastare).
+Se riesci a giocare vedendo la mappa e riuscendo a leggere le scritte al di sotto allora sei messo
+nella condizione ottimale.
+
+*Riguardo ai colori*
+Questo gioco usa i *colori ANSI* disponibili per il tuo terminale. Questo significa
+che un colore, per esempio *L'azzurro*, puo' fare colpo su un terminale e sembrare
+invece orribile su di un altro. Se non ti piacciono i colori che possiedi, vai
+nelle impostazioni del tuo terminale e cambia la palette dei colori a tuo piacimento.

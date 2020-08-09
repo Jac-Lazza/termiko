@@ -1,0 +1,53 @@
+{
+  "Options": {
+    "Avaiable troups": "Truppe disponibili",
+    "Turn limit": "Limite turni di gioco",
+    "Gamemode": "Modalità di gioco",
+    "Language": "Lingua",
+    "Continental bonus": "Bonus continenti",
+    "Save and return to main menu": "Salva e ritorna al menu principale"
+  },
+  "Main menu": {
+    "Local match": "Partita locale",
+    "Network match": "Partita in rete",
+    "Game rules": "Regole di gioco",
+    "Options": "Opzioni",
+    "Exit": "Esci"
+  },
+  "Gamemode": {
+    "0": "Conquista del mondo",
+    "1": "Annientamento del nemico"
+  },
+  "Continental bonus": {
+    "0": "NO",
+    "1": "SI"
+  },
+  "Armies": {
+    "red": "Armata Rossa",
+    "blue": "Armata Blu",
+    "yellow": "Armata Gialla",
+    "green": "Armata Verde",
+    "cyan": "Armata Azzurra",
+    "magenta": "Armata Viola"
+  },
+  "Win messages": {
+    "Win world domination": "IL MONDO È STATO CONQUISTATO DA",
+    "Win enemy annihilation": "TUTTI I NEMICI SONO STATI SCONFITTI DA",
+    "Win turn limit": "È STATO RAGGIUNTO IL MASSIMO DI TURNI! IL VINCITORE È",
+    "Win draw": "PAREGGIO, I VINCITORI SONO"
+  },
+  "Confirm": "Conferma",
+  "Armies selection": "SELEZIONE ARMATE",
+  "Map selection": "SELEZIONE MAPPE",
+  "Game options": "OPZIONI DI GIOCO",
+  "Player": "GIOCATORE",
+  "Avaiable troups": "TRUPPE DISPONIBILI",
+  "Deployed troups": "TRUPPE SCHIERATE",
+  "Allied troups": "TRUPPE ALLEATE",
+  "Enemy troups": "TRUPPE NEMICHE",
+  "Troups movement": "MOVIMENTO TRUPPE",
+  "Troups to move": "TRUPPE DA MUOVERE",
+  "Attack preparation": "PREPARAZIONE ALL'ATTACCO",
+  "Defence preparation": "PREPARAZIONE ALLA DIFESA",
+  "Press continue": "~~~ Premere INVIO per ritornare al menu principale ~~~"
+}

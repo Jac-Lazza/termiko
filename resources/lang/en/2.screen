@@ -1,0 +1,19 @@
+*Gamemodes and options*
+The goal of the game depends on the *gamemode* selected (check the options).
+Avaiable gamemodes:
+ *~ World domination*
+ Conquer the whole world, no country spared
+ *~ Enemy Annihilation*
+ Destroy all enemies, even if you haven't conquered the whole world you win when
+ there are no other enemies left (great for a small amount of players).
+
+*options*
+In the *options* section of the main menu you can change many parameters by pressing *ENTER*,
+like the *Language*, avaiable troups at the beginning of the game and gamemode to
+name a few. Go and give it a look.
+
+*turn limit*
+In the *options menu* a turn limit can be set (and also disabled). If the turn limit is reached
+the match ends and a score is calculated based on the importance of the countries owned for each player.
+The player(s) with the highest score is the winner in this case.
+With *turn* the game considers the actions of one player, not a round of all the players.

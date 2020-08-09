@@ -1,0 +1,13 @@
+*Screen resolution*
+The graphics of this game is made out entirely of colored characters. So you can
+expect that the world map is going to take a lot of space on your screen.
+To help you in the process, maximize the window of your terminal and reduce the
+character size by pressing *CTRL+-* (a couple of hits should be enough).
+If, playing the game, you can see the world map fully formed and you can read
+the text below it, then you are in perfect conditions to play the game.
+
+*About colors*
+This games uses seven *ANSI colors* avaiable on your terminal. So this means that a
+*CYAN* color on one terminal can look cool, while on another one can look terrible.
+If you don't like the colors, check the colors options in your terminal and pick your
+prefereed tonalities of cyan, magenta, red, etc...

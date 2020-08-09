@@ -1,0 +1,30 @@
+*Come giocare*
+Ogni giocatore possiede un esercito colorato. Ci sono sei colori disponibili.
+A inizio partita ogni giocatore possiede un numero casuale di *nazioni* e un numero fisso
+di *truppe da posizionare*.
+I primi turni sono usati per sparpagliare le truppe sulla mappa, non si può attacare
+(altrimenti il primo giocatore sarebbe in vantaggio rispetto agli altri).
+Una volta che il gioco si è stabilizzato da questa fase iniziale, ad ogni turno viene
+calcolato un numero di *truppe guadagnate* da posizionare nuovamente e poi si può
+decidere che nazioni attacare e che spostamenti fare.
+
+*Spostamento strategico*
+Questo tipo di spostamento avviene quando delle truppe si spostano da una nazione posseduta
+verso una nazione *alleata* o *di nessuno* (colorate in bianco). Questo tipo di spostamenti
+fa terminare il tuo turno.
+
+*Attacco*
+Un attacco viene eseguito quando un giocatore sposta delle truppe in una nazione *nemica*.
+L'*attaccante* può scegliere fino ad un massimo di tre truppe da utilizzare nell'attacco, al
+*difensore* è posta una scelta analoga. Se l'attaccante vince allora deve spostare *almeno*
+un numero di truppe pari a quelle impiegate nell'attacco, può aumentare se desidera.
+Una considerazione prima di continuare, una *nazione conquistata* deve per forza possedere almeno
+una truppa, questo significa che se le forze esposte sono scarse si può incorrere in spiacevoli limitazioni.
+Per esempio, una nazione con due truppe può solo attacare con una di essere, e una nazione con una truppa
+non può fare un bel niente (nazione biscotto).
+Un attacco *non termina* il tuo turno, quindi se hai la voglia e le truppe per farlo, puoi attaccare a tuo piacimento.
+
+*bonus*
+Il numero di truppe all'inizio di ogni turno è stabilito *dividendo per tre il numero di stati che possiedi* in quel momento.
+Inoltre, se il *bonus continentale* è abilitato (controlla le opzioni), allora se possiedi continenti interi potrai godere
+di ulteriori truppe addizionali.
