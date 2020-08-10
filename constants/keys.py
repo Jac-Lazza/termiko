@@ -2,12 +2,13 @@
 """
 Useful Keyboard keys
 """
-UP = "A"
-DOWN = "B"
-RIGHT = "C"
-LEFT = "D"
+UP = "\x1b[A"
+DOWN = "\x1b[B"
+RIGHT = "\x1b[C"
+LEFT = "\x1b[D"
 ENTER = "\r"
-ARROW_PREP = ('\x1b', '[')
+# ARROW_PREP = ('\x1b', '[') #Not needed anymore
+ESC = "\x1b" #Now this keys can be finnaly hit
 DELETE = '\x7f'
 
-KEYS = [UP, DOWN, RIGHT, LEFT, ENTER, ARROW_PREP, DELETE]
+KEYS = [UP, DOWN, RIGHT, LEFT, ENTER, DELETE, ESC]

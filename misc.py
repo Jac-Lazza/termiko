@@ -52,30 +52,44 @@ def buffer_line_pad(text):
     text += ": "
     return text + " "*(max_padding-len(text))
 
+# def readArrow():
+#     """
+#     Used to read a single character from the screen,
+#     in this case the keyboard arrows
+#     """
+#     try:
+#         value = readchar()
+#         if(value == ENTER):
+#             return ENTER
+#         elif(value == DELETE):
+#             return DELETE
+#         elif(value == ARROW_PREP[0]):
+#             if(readchar() == ARROW_PREP[1]):
+#                 value = readchar()
+#                 if(value == 'A'):
+#                     return UP
+#                 elif(value == 'B'):
+#                     return DOWN
+#                 elif(value == 'C'):
+#                     return RIGHT
+#                 elif(value == 'D'):
+#                     return LEFT
+#     except Exception as e:
+#         return None
+
 def readArrow():
     """
-    Used to read a single character from the screen,
-    in this case the keyboard arrows
+    The usage of readchar gave problems between platofrm, and it was more complicated
+    to read the directional arrows. The correct function to read a key pressing is
+    readchar.readkey(), the function that I'm now using
     """
     try:
-        value = readchar()
-        if(value == ENTER):
-            return ENTER
-        elif(value == DELETE):
-            return DELETE
-        elif(value == ARROW_PREP[0]):
-            if(readchar() == ARROW_PREP[1]):
-                value = readchar()
-                if(value == 'A'):
-                    return UP
-                elif(value == 'B'):
-                    return DOWN
-                elif(value == 'C'):
-                    return RIGHT
-                elif(value == 'D'):
-                    return LEFT
-    except Exception as e:
-        return None
+        value = readkey()
+        if(value in KEYS):
+            return value
+    except:
+        pass
+    return None
 
 def put(data):
     print(data, end="")
