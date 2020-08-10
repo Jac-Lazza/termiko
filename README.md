@@ -20,17 +20,19 @@ To run the game clone this repo and install the dependecies (I suggest to use a 
 Once all the dependencies are installed (found in the file *Pipfile*) you can run `python main.py` and the program should start correctly.
 
 ### Windows
-I tried to run the project on my Windows system, and I can assure you it doesn't work... From what I've seen it seems that the values for the
-directional arrows are different from a Linux system and a Windows one, so this makes the menu useless. Also, if you get stuck in the menu on Windows,
-by keeping pressed *CTRL+C* you get an exception that is not raised on Linux.
-So, while the goal of the project is to make this run on both systems without problems, for now I must say that **the project is unstable for the Windows platform**. If you wish to help on this matter you're my guest.
+I tried to run the project on my Windows system, and I can assure you it doesn't work...
+So, while the goal of the project is to make this run on both systems without problems, for now I must say that **the project is unstable for the Windows platform**. If you wish to help on this matter be my guest.
 
 ## Limitations
 
 For now only the *Network match* is not avaiable, it still has to be programmed. I'm working on getting a good and stable *Local match* first and then I
 suppose to move on onto the network stuff. This is still a work in progress after all, remeber that.
 
-## TODO-List
-- Making the project stable for Windows
-- Add the *Network match* feature
-- Adjust, refactor and optimize code (This is the very last thing to do)
+## TODO list
+- [ ] Making the project stable for Windows
+  - [X] Solving the reading of the directional arrows
+  - [ ] Insert unicode escaped sequences to be printed as characters (Maybe as a new constant)
+  - [ ] Change the value of a constant based on the platform the game run on (Windows prompt doesn't support every sequence)
+- [ ] Adding the *ESC* feature, to quit the game quickly
+- [ ] Add the *Network match* feature
+- [ ] Adjust, refactor and optimize code (This is the very last thing to do)
