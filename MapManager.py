@@ -92,7 +92,7 @@ class MapManager(object):
                 state_name = line[0]
                 state_id = line[1]
                 state_borders = [int(x) for x in line[2].split(",")]
-                renderable_id = line[3]
+                renderable_id = BLOCKS[int(line[3])] #Get character from graphical_characters.py
                 id.append({NAME: state_name, ID: state_id, BORDERS: state_borders, OWNER: NO_ONE, TROUPS: 0, RENDERABLE_ID: renderable_id}) #TODO: see if you can format it better
             except:
                 raise Exception("ID content parsing exception")

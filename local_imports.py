@@ -24,6 +24,7 @@ from constants.dirbases import *
 from constants.termcolor_attrs import *
 from constants.lang import *
 from constants.settings import *
+from constants.graphical_characters import *
 
 #Data structures
 from constants.structures.id_structure import *

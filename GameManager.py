@@ -180,8 +180,8 @@ class GameManager(object):
         while(True):
             countries = self.map.get_countries_by_owner(player.color)
             self.map.current_country = countries[country_index][ID]
-            self.map.buffer_line1 = colored(buffer_line_pad(self.options.translation[PLAYER]), MAGENTA) + colored(self.options.translation[ARMIES][player.color], player.color) + " ▞▞▞ " + colored(countries[country_index][NAME], CYAN)
-            self.map.buffer_line2 = colored(buffer_line_pad(self.options.translation[DEPLOYED_TROUPS]), MAGENTA) + colored("▉"*min(countries[country_index][TROUPS], get_avaiable_columns()), player.color)
+            self.map.buffer_line1 = colored(buffer_line_pad(self.options.translation[PLAYER]), MAGENTA) + colored(self.options.translation[ARMIES][player.color], player.color) + CHESS_BLOCK + colored(countries[country_index][NAME], CYAN)
+            self.map.buffer_line2 = colored(buffer_line_pad(self.options.translation[DEPLOYED_TROUPS]), MAGENTA) + colored(BULLET_BLOCK*min(countries[country_index][TROUPS], get_avaiable_columns()), player.color)
             self.map.buffer_line3 = ""
             self.map.show_frame()
             key_pressed = readArrow()
@@ -217,13 +217,13 @@ class GameManager(object):
             self.map.selected_country = selected_country[ID]
             self.map.target_country = border_country[ID]
             #Changing the buffer_lines
-            self.map.buffer_line1 = colored(buffer_line_pad(self.options.translation[TROUPS_MOVEMENT]), MAGENTA) + colored(selected_country[NAME], selected_country[OWNER]) + " ▞▞▞ " + colored(border_country[NAME], border_country[OWNER])
-            self.map.buffer_line2 = colored(buffer_line_pad(self.options.translation[DEPLOYED_TROUPS]), selected_country[OWNER]) + colored("▉"*min(selected_country[TROUPS], get_avaiable_columns()), selected_country[OWNER])
+            self.map.buffer_line1 = colored(buffer_line_pad(self.options.translation[TROUPS_MOVEMENT]), MAGENTA) + colored(selected_country[NAME], selected_country[OWNER]) + CHESS_BLOCK + colored(border_country[NAME], border_country[OWNER])
+            self.map.buffer_line2 = colored(buffer_line_pad(self.options.translation[DEPLOYED_TROUPS]), selected_country[OWNER]) + colored(BULLET_BLOCK*min(selected_country[TROUPS], get_avaiable_columns()), selected_country[OWNER])
             if(selected_country[OWNER] != border_country[OWNER]):
                 buffer_line_text = buffer_line_pad(self.options.translation[ENEMY_TROUPS])
             else:
                 buffer_line_text = buffer_line_pad(self.options.translation[ALLIED_TROUPS])
-            self.map.buffer_line3 = colored(buffer_line_text, border_country[OWNER]) + colored("▉"*min(border_country[TROUPS], get_avaiable_columns()), border_country[OWNER])
+            self.map.buffer_line3 = colored(buffer_line_text, border_country[OWNER]) + colored(BULLET_BLOCK*min(border_country[TROUPS], get_avaiable_columns()), border_country[OWNER])
             self.map.show_frame()
             key_pressed = readArrow()
             if(key_pressed == RIGHT):
@@ -280,8 +280,8 @@ class GameManager(object):
         min_troups = number_troups_to_move
         while(True):
             #Rendering part
-            self.map.buffer_line1 = colored(buffer_line_pad(self.options.translation[OPTIONS][AVAIABLE_TROUPS].upper()), MAGENTA) + colored("▉"*min(avaiable_troups, get_avaiable_columns()), source[OWNER])
-            self.map.buffer_line2 = colored(buffer_line_pad(self.options.translation[TROUPS_TO_MOVE]), MAGENTA) + colored("▉"*min(number_troups_to_move, get_avaiable_columns()), source[OWNER])
+            self.map.buffer_line1 = colored(buffer_line_pad(self.options.translation[OPTIONS][AVAIABLE_TROUPS].upper()), MAGENTA) + colored(BULLET_BLOCK*min(avaiable_troups, get_avaiable_columns()), source[OWNER])
+            self.map.buffer_line2 = colored(buffer_line_pad(self.options.translation[TROUPS_TO_MOVE]), MAGENTA) + colored(BULLET_BLOCK*min(number_troups_to_move, get_avaiable_columns()), source[OWNER])
             self.map.buffer_line3 = ""
             self.map.show_frame()
             #Reading the key
@@ -444,9 +444,9 @@ class GameManager(object):
         # tmp_countries = list(countries)
         while(True):
             self.map.current_country = countries[country_index][ID] #Selecting the country with her own id
-            self.map.buffer_line1 = colored(buffer_line_pad(self.options.translation[PLAYER]), MAGENTA) + colored(self.options.translation[ARMIES][player.color], player.color) + " ▞▞▞ " + colored(countries[country_index][NAME], CYAN)
-            self.map.buffer_line2 = colored(buffer_line_pad(self.options.translation[AVAIABLE_TROUPS]), MAGENTA) + "▉"*min(player.avaiable_troups, get_avaiable_columns())
-            self.map.buffer_line3 = colored(buffer_line_pad(self.options.translation[DEPLOYED_TROUPS]), MAGENTA) + colored("▉"*min(countries[country_index][TROUPS], get_avaiable_columns()), player.color)
+            self.map.buffer_line1 = colored(buffer_line_pad(self.options.translation[PLAYER]), MAGENTA) + colored(self.options.translation[ARMIES][player.color], player.color) + CHESS_BLOCK + colored(countries[country_index][NAME], CYAN)
+            self.map.buffer_line2 = colored(buffer_line_pad(self.options.translation[AVAIABLE_TROUPS]), MAGENTA) + BULLET_BLOCK*min(player.avaiable_troups, get_avaiable_columns())
+            self.map.buffer_line3 = colored(buffer_line_pad(self.options.translation[DEPLOYED_TROUPS]), MAGENTA) + colored(BULLET_BLOCK*min(countries[country_index][TROUPS], get_avaiable_columns()), player.color)
             self.map.show_frame()
             #Ok control wise it's quite rigid, but I had to make some choice to make my life easier
             key_pressed = readArrow()

@@ -31,8 +31,9 @@ suppose to move on onto the network stuff. This is still a work in progress afte
 ## TODO list
 - [ ] Making the project stable for Windows
   - [X] Solving the reading of the directional arrows
-  - [ ] Insert unicode escaped sequences to be printed as characters (Maybe as a new constant)
-  - [ ] Change the value of a constant based on the platform the game run on (Windows prompt doesn't support every sequence)
+  - [X] Insert unicode escaped sequences to be printed as characters (Maybe as a new constant)
+  - [X] Change the value of a constant based on the platform the game runs on (Windows prompt doesn't support every sequence)
 - [ ] Adding the *ESC* feature, to quit the game quickly
+- [ ] Adding nations name translation support
 - [ ] Add the *Network match* feature
 - [ ] Adjust, refactor and optimize code (This is the very last thing to do)
