@@ -38,3 +38,6 @@ from misc import *
 def main_menu(text, selected=0):
     # MENU = ["Local match", "Network match", "Game rules", "Options", "Exit"] #Temporal, must be read by configuration file
     return menu(text, selected=selected, optional_text="TERMIKO!")
+
+def quit_menu(text, selected=1, optional_text=None): #This function is quite superfluous
+    return menu(text, selected=selected, optional_text=optional_text)

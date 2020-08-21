@@ -85,6 +85,7 @@ def readArrow():
     """
     try:
         value = readkey()
+        value = value.upper() #For the 'Q' key
         if(value in KEYS):
             return value
     except:
@@ -132,6 +133,8 @@ def menu(menu_text, selected=0, optional_text=None):
         #Maybe to add something
     elif(command == DELETE):
         return DELETE
+    elif(command == QUIT):
+        return QUIT
     return menu(menu_text, selected, optional_text)
 
 # def toggle_visibility():

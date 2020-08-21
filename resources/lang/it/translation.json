@@ -14,6 +14,11 @@
     "Options": "Opzioni",
     "Exit": "Esci"
   },
+  "Quit menu": {
+    "Warning text": "Sei sicuro di voler chiudere il gioco e di tornare al menu principale?",
+    "Yes": "Si",
+    "No": "No"
+  },
   "Gamemode": {
     "0": "Conquista del mondo",
     "1": "Annientamento del nemico"

@@ -11,6 +11,10 @@ In general, except for deploying troups, remember this:
  *~ DELETE* to cancel actions or to pass the turn
  *~ RIGHT or LEFT* to move between countries and add or diminish troups to use
 
+*Quitting the game*
+Press *Q* at any time to quit the game, a warning window will be displayed to make sure
+you know what you are doing. A quitted match is a lost match, the data will not be saved.
+
 *tips*
 If you want to quickly end the game in a *local match*, keep pressed the *DELETE* button,
 although this won't work if the turn limit is infinite, so modify wisely that option.

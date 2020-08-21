@@ -17,7 +17,7 @@ before start playing.
 ### Linux
 The project was made on a Linux system, so there should be no problems with this kind of platform (but I'm sure they will raise soon).
 To run the game clone this repo and install the dependecies (I suggest to use a virtual environment, such as *pipenv*, but you can do as you want).
-Once all the dependencies are installed (found in the file *Pipfile*) you can run `python main.py` and the program should start correctly.
+Once all the dependencies are installed (found in the *Pipfile* file) you can run `python main.py` and the program should start correctly.
 
 ### Windows
 I tried to run the project on my Windows system, and I can assure you it doesn't work...
@@ -33,7 +33,7 @@ suppose to move on onto the network stuff. This is still a work in progress afte
   - [X] Solving the reading of the directional arrows
   - [X] Insert unicode escaped sequences to be printed as characters (Maybe as a new constant)
   - [X] Change the value of a constant based on the platform the game runs on (Windows prompt doesn't support every sequence)
-- [ ] Adding the *ESC* feature, to quit the game quickly
+- [X] Adding the *Quit* feature, to quit the game quickly.
 - [ ] Adding nations name translation support
 - [ ] Add the *Network match* feature
 - [ ] Adjust, refactor and optimize code (This is the very last thing to do)

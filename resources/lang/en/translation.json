@@ -14,6 +14,11 @@
     "Options": "Options",
     "Exit": "Exit"
   },
+  "Quit menu": {
+    "Warning text": "Do you want to quit the game and return to the main menu?",
+    "Yes": "Yes",
+    "No": "No"
+  },
   "Gamemode": {
     "0": "World domination",
     "1": "Enemy annihilation"

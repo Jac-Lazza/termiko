@@ -18,9 +18,8 @@ BLOCK = "\u2588" # █
 BLOCKS = [BLOCK_1, BLOCK_2, BLOCK_3, BLOCK]
 
 BULLET_BLOCK = "\u2589" # ▉ ~ ▉▉▉
+CHESS_BLOCK = " " + "\u259E"*3 + " " # ▞▞▞
+
 if(platform == "win32"):
     BULLET_BLOCK = BLOCK #Windows doesn't support the character
-
-CHESS_BLOCK = " " + "\u259E"*3 + " " # ▞▞▞
-if(platform == "win32"):
     CHESS_BLOCK = " --- " #Windows doesn't support also this character

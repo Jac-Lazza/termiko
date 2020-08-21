@@ -1,5 +1,5 @@
 #author: n01
-import messages
+from messages import main_menu
 from local_imports import *
 from misc import *
 from MapManager import *
@@ -10,7 +10,7 @@ options = OptionManager()
 result = 0 #Selecting the first item on the menu list
 while(True):
     menu_text = list(options.translation[MAIN_MENU].values())
-    result = messages.main_menu(menu_text, result)
+    result = main_menu(menu_text, result)
     win_message = ""
     winner = ""
     if(result == 0): #Local match
@@ -84,7 +84,7 @@ while(True):
             game.map.show_frame()
             input() #Just waiting that ENTER is pressed, then we return to the main menu
         except:
-            pass #Handling all possible exceptions in GameManager
+            pass #Quitting the game and returning to the local match
     elif(result == 1): #Network match
         clear()
         print(colored("Still a work in progress!", MAGENTA)) #TODO
@@ -101,7 +101,7 @@ while(True):
             pass
     elif(result == 4): #Exiting the game
         break
-    elif(result == DELETE):
+    elif((result == DELETE)or(result == QUIT)):
         result = 0 #Do nothing if DELETE is pressed and reset the result variable to the beginning
     else:
         sys.exit(1)

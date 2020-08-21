@@ -3,6 +3,7 @@
 The class GameManager manages an instance of the game, contemplating all players,
 the map and that the rules of the game are respected
 """
+from messages import quit_menu
 from local_imports import *
 from MapManager import *
 from misc import *
@@ -66,7 +67,7 @@ class GameManager(object):
         selected = menu(armies_menu_text, selected=selected, optional_text=self.options.translation[ARMIES_SELECTION])
         if(selected == 6):
             return None #Choice confirmed
-        elif(selected == DELETE):
+        elif((selected == DELETE)or(selected == QUIT)):
             raise Exception("Quitting menu for DELETE")
         #Modify the self.players_names list
         color = COLORS[selected]
@@ -98,7 +99,7 @@ class GameManager(object):
         else:
             #Multiple maps avaiable, choose one!
             result = menu(avaiable_maps, optional_text=self.options.translation[MAP_SELECTION])
-            if(result == DELETE):
+            if((result == DELETE)or(result == QUIT)):
                 raise Exception("Quitting menu for DELETE")
             return avaiable_maps[result]
 
@@ -199,6 +200,14 @@ class GameManager(object):
                     pass #Ignore, do nothing
             elif(key_pressed == DELETE):
                 break #Pass the turn to someone else
+            elif(key_pressed == QUIT):
+                #Spawning the quit menu, only two places can spawn it and this is one of them
+                quit_text = list(self.options.translation[QUIT_MENU].values())
+                quit_result = quit_menu(quit_text[1:], optional_text=quit_text[0])
+                if(quit_result == 0):
+                    raise Exception("Quitting the game and returning to main menu!")
+                else:
+                    pass #No
             else:
                 pass #Do nothing
         self.next_turn()
@@ -251,7 +260,7 @@ class GameManager(object):
                         return False
                     except:
                         pass #Attack canceled
-            elif(key_pressed == DELETE):
+            elif((key_pressed == DELETE)or(key_pressed == QUIT)):
                 #Aborting the operation, restoring map status variables
                 self.map.current_country = selected_country[ID]
                 self.map.selected_country = None
@@ -297,7 +306,7 @@ class GameManager(object):
             elif(key_pressed == ENTER):
                 if(number_troups_to_move>0):
                     break
-            elif(key_pressed == DELETE):
+            elif((key_pressed == DELETE)or(key_pressed == QUIT)):
                 if(unblockable):
                     #Using default numbers
                     number_troups_to_move = 1
@@ -325,7 +334,7 @@ class GameManager(object):
         defender_avaiable_troups = defender[TROUPS]-1
         ###
         while(True):
-            block = "█"*(get_avaiable_columns()*10//100) + " "
+            block = BLOCK*(get_avaiable_columns()*10//100) + " "
             if(modality):
                 attacker_arrow = "|> "
                 defender_arrow = "   "
@@ -360,7 +369,7 @@ class GameManager(object):
                     modality = False #Switching to defence mode
                 else:
                     break #Exiting the while loop and Executing the attack
-            elif(key_pressed == DELETE):
+            elif((key_pressed == DELETE)or(key_pressed == QUIT)):
                 if(modality):
                     self.map.toggle_visibility()
                     raise Exception("Attack aborted") #The attack can be canceled by the attacker player
@@ -465,6 +474,14 @@ class GameManager(object):
             elif(key_pressed == DELETE):
                 self.update_id_attribute(countries)
                 return country_index
+            elif(key_pressed == QUIT):
+                #Spawning the quit menu
+                quit_text = list(self.options.translation[QUIT_MENU].values())
+                quit_result = quit_menu(quit_text[1:], optional_text=quit_text[0])
+                if(quit_result == 0):
+                    raise Exception("Quitting the game and returning to main menu!")
+                else:
+                    pass #No
             else:
                 pass #Do nothing
 

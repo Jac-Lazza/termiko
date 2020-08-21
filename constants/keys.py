@@ -8,7 +8,8 @@ RIGHT = "\x1b[C"
 LEFT = "\x1b[D"
 ENTER = "\r"
 # ARROW_PREP = ('\x1b', '[') #Not needed anymore
-ESC = "\x1b" #Now this keys can be finnaly hit
+# ESC = "\x1b" #Now this keys can be finnaly hit EDIT: no, it has problems between platforms
+QUIT = "Q"
 DELETE = '\x7f'
 
-KEYS = [UP, DOWN, RIGHT, LEFT, ENTER, DELETE, ESC]
+KEYS = [UP, DOWN, RIGHT, LEFT, ENTER, DELETE, QUIT]

@@ -6,6 +6,7 @@ Structure of the generic translation.json file
 
 OPTIONS = "Options"
 MAIN_MENU = "Main menu"
+QUIT_MENU = "Quit menu"
 ARMIES = "Armies"
 CONFIRM = "Confirm"
 ARMIES_SELECTION = "Armies selection"

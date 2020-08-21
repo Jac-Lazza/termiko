@@ -114,7 +114,7 @@ class OptionManager(object):
             #Save and return
             self.save()
             return None
-        elif(result == DELETE):
+        elif((result == DELETE)or(result == QUIT)):
             raise Exception("Quitting menu for DELETE")
         return self.edit_options(selected=result)
 

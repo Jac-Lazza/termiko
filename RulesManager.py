@@ -99,7 +99,7 @@ class RulesManager(object):
             elif(direction == LEFT):
                 if(self.screens_index>0):
                     self.screens_index -= 1
-            elif(direction == DELETE):
+            elif((direction == DELETE)or(direction == QUIT)):
                 break #Doesn't want to read the rules anymore
             else:
                 pass #Do nothing

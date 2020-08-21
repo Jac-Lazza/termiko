@@ -4,7 +4,7 @@ al gioco da tavolo *RISIKO!*.
 Non è facile fare un gioco da terminale con dei controlli facili ed intuitivi,
 fortunatamente una veloce lettura alle regole di gioco dovrebbe darti l'infarinatura
 necessaria per muoverti.
-I soli tasti che il gioco comprende sono *le frecce direzionali*, *invio* e *delete*.
+I soli tasti che il gioco comprende sono *le frecce direzionali*, *invio*, *delete* e *Q*.
 Per navigare nel regolamento usa *invio* o *freccia destra*, per tornare indietro usa la *freccia sinistra*.
-Puoi tornare al menu principale in qualsiasi momento premendo *delete*.
+Puoi tornare al menu principale in qualsiasi momento premendo *delete* oppure *Q*.
 Cominciamo.
