@@ -1,20 +1,16 @@
-*Commands and tips*
+*Commands*
 When the game asks you to *deploy troups* it will present to you a list of white bars,
 rappresenting the avaiable tanks to deploy.
-To deploy a tank, select a country with *left* or *right* and press *ENTER*.
+To deploy a tank, select a country with *A* or *D* and press *ENTER*.
 Be careful, once deployed a tank can no longer be taken away to be deployed elsewhere.
 When the game asks you to *perform actions with your country* choose the country as above and
 then press *ENTER*. The country will stop *blinking* and you can choose wich *border country* to attack
 or help.
 In general, except for deploying troups, remember this:
  *~ ENTER* to confirm actions
- *~ DELETE* to cancel actions or to pass the turn
- *~ RIGHT or LEFT* to move between countries and add or diminish troups to use
+ *~ BACKSPACE* to cancel actions or to pass the turn
+ *~ A* or *D* to move between countries and add or diminish troups to use
 
 *Quitting the game*
 Press *Q* at any time to quit the game, a warning window will be displayed to make sure
 you know what you are doing. A quitted match is a lost match, the data will not be saved.
-
-*tips*
-If you want to quickly end the game in a *local match*, keep pressed the *DELETE* button,
-although this won't work if the turn limit is infinite, so modify wisely that option.

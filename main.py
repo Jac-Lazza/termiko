@@ -70,7 +70,6 @@ while(True):
                     winner_name = game.players_names[winner_index]
                     win_message = options.translation[WIN_MESSAGES][WIN_TURN_LIMIT]
                     winner = colored(options.translation[ARMIES][winner_name], winner_name)
-                    pass
             #Prepearing the map to be displayed
             #Cleaning cursor countries
             game.map.current_country = None

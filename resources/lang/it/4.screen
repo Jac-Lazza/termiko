@@ -1,7 +1,7 @@
-*Comandi e trucchi*
+*Comandi*
 Quando il gioco ti chiede di *schierare le tue truppe* una barra bianca comparirà e
 andrà a rappresentare il numero di carri che puoi disporre sul tabellone.
-Per schierare un carro, seleziona la nazione interessata con la *freccia destra o sinistra*
+Per schierare un carro, seleziona la nazione interessata con i tasti *A* oppure *D*
 e premi *invio*. Attenzione, una volta che un carro è schierato, non puoi più richiamarlo indietro,
 quindi scegli con cura!
 Se il gioco ti chiede di *eseguire delle azioni* con le tue nazioni allora puoi selezionare uno stato
@@ -9,13 +9,9 @@ come sopra e, quando lo stato smette di *lampeggiare*, selezionare una nelle *na
 o supportare.
 In generale, fatta eccezione per lo schieramento di nuove truppe, ricorda il seguente:
   *~ Invio* per confermare azioni
-  *~ delete* per cancellare azioni o passare il turno
-  *~ freccia destra o sinistra* per muoverti tra le nazioni oppure aumentare/diminuire le truppe impiegate nei tuoi schemi
+  *~ backspace* per cancellare azioni o passare il turno
+  *~ A* oppure *D* per muoverti tra le nazioni oppure aumentare/diminuire le truppe impiegate nei tuoi schemi
 
 *Uscire dal gioco*
 Premi *Q* quando vuoi per uscire dal gioco. Una finestra di avvertimento ti chiederà di confermare la tua scelta.
 Ricorda: una partita abbandonata in questo modo non potrà più essere ripresa, i dati non vengono salvati.
-
-*Consigli*
-Se vuoi terminare velocemente una *partita locale* tieni premuto il tasto *delete* così da consumare tutti i turni a tua disposizione.
-Attento però, questo non funziona se hai settato i turni all'infinito, quindi modifica con attenzione quell'opzione.
