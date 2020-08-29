@@ -88,6 +88,8 @@ def readArrow():
         value = value.upper() #For the 'Q' key
         if(value in KEYS):
             return value
+        if(value in BAD_DELETES):
+            return DELETE #Handling terminal-specific delete codes
     except:
         pass
     return None

@@ -16,5 +16,7 @@ ENTER = "\r"
 QUIT = "Q"
 # DELETE = '\x7f' #This seems terminal-specifics
 DELETE = "\x08"
+#Some terminals use delete code characters different from \x08 (the standard one), this is strange and I still have to understand why they do this
+BAD_DELETES = ["\x7f"]
 
 KEYS = [UP, DOWN, RIGHT, LEFT, ENTER, DELETE, QUIT]
